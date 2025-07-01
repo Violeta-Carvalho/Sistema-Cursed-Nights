@@ -1,0 +1,36 @@
+<div class="tab flex-center" data-group="primary">
+    <div class="flexrow spc-pool-header">
+        <label class="resource-label field-header">{{localize "WOD5E.WTA.Gifts"}}</label>
+        <div class="item-controls spc-item-header">
+            <a class="item-control power-create" data-action="createSPCPower" title="{{localize 'WOD5E.VTM.AddGift'}}" data-type="gift">
+                <i class="fas fa-plus"></i>
+                {{localize "WOD5E.WTA.AddGift"}}
+            </a>
+        </div>
+    </div>
+    <ol class="items-list">
+        <!-- Iterate through each of the gift lists -->
+        {{#each gifts as |gift key|}}
+            {{#if gift.visible}}
+                <li class="flexrow spc-item-header">
+                    <label for="{{gift.name}}" class="resource-label rollable" data-action="roll" data-use-absolute-value="true"
+                      data-absolute-value="{{gift.value}}" data-label="{{generateLocalizedLabel key 'gifts'}}"
+                      {{#if ../noAdvancedDice}} data-disable-advanced-dice="true"{{/if}} data-selectors="gifts gifts.{{key}}">
+                      {{generateLocalizedLabel key 'gifts'}}
+                    </label>
+                    <div class="resource-value">
+                        <input type="number" name="system.gifts.{{key}}.value"
+                        value="{{gift.value}}" data-name="system.gifts.{{key}}.value"/>
+                    </div>
+                    <!-- Item controls for Gift sections -->
+                    <div class="item-controls">
+                        <!-- Icon to delete the gift -->
+                        <a class="item-control power-delete" title="{{localize 'WOD5E.Delete'}}" data-type="gift" data-id="{{key}}">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </div>
+                </li>
+            {{/if}}
+        {{/each}}
+    </ol>
+</div>

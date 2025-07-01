@@ -1,0 +1,29 @@
+{
+  "name": "Roll API Example",
+  "type": "script",
+  "scope": "global",
+  "author": "OrOQ70SVPCGayvrw",
+  "img": "icons/svg/dice-target.svg",
+  "command": "// This macro is an example of how you can access the WOD5E Roll API.\n\n// Define the actor\nconst actor = game.actors.get(ChatMessage.getSpeaker().actor)\n\n// Make sure we're only allowing vampires to roll this, since it includes hunger dice\nif (actor.type !== 'vampire') return ui.notifications.warn('Selected actor is not a vampire.')\n\n// Define any variables we need\nconst actorHunger = actor.system.hunger.value\nconst actorAttributes = actor.system.attributes\nconst actorDisciplines = actor.system.disciplines\n\n// Get the value of any bonuses\nconst strength = actorAttributes.strength.value\nconst animalism = actorDisciplines.animalism.value\n\n// Define hunger dice\nconst advancedDice = Math.max(actorHunger, 0)\n\n// Define vampire dice\n// \"Basic Dice\" is a calculation of what pool we're rolling, minus any \"Advanced Dice\"\nconst basicDice = Math.max((strength + animalism) - advancedDice, 0)\n\n// Send the roll to the API\nWOD5E.api.Roll({\ntitle: \"Custom Vampire Roll\",\nbasicDice,\nadvancedDice\n})",
+  "folder": null,
+  "ownership": {
+    "default": 0,
+    "OrOQ70SVPCGayvrw": 3
+  },
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "vtm5e",
+    "systemVersion": "4.0.0-prerelease2",
+    "coreVersion": "12.331",
+    "createdTime": 1707614396503,
+    "modifiedTime": 1731184217275,
+    "lastModifiedBy": "0uQsagcnnkt56LRN",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_id": "xHe6LF89pUgEDxV3",
+  "sort": 100000,
+  "_key": "!macros!xHe6LF89pUgEDxV3"
+}

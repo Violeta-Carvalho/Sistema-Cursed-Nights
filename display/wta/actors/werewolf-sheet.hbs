@@ -1,0 +1,64 @@
+{{!-- Werewolf Sheet Header --}}
+<header class="actor-header" {{#if headerbg}} style="background: url({{headerbg}}) center;"{{/if}}>
+    <div class="header-fields">
+        <div class="header-fields-left">
+            {{!-- Health Tracker --}}
+            {{> "systems/vtm5e/display/shared/actors/parts/health.hbs"}}
+            {{!-- Willpower Tracker --}}
+            {{> "systems/vtm5e/display/shared/actors/parts/willpower.hbs"}}
+        </div>
+    </div>
+    <!-- Middle of the header -->
+    {{> "systems/vtm5e/display/shared/actors/parts/header-profile.hbs"}}
+    <div class="header-fields">
+        <div class="header-fields-right">
+            <div class="flexcol">
+                <div class="field-section">
+                    <div class="flexrow nowrap">
+                        <div class="flexcol shared-row">
+                            <label class="resource-label field-header">{{localize 'WOD5E.WTA.Tribe'}}</label>
+                            <div class="resource resource-content">
+                                {{#if tribe}}
+                                    <span class="data-item nowrap">
+                                        {{tribe.name}}
+                                    </span>
+                                    <a class="edit-data-item" data-action="itemEdit" data-item-id="{{tribe.id}}">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </a>
+                                {{else}}
+                                    <a class="add-data-item" data-action="createItem" data-type="tribe">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                {{/if}}
+                            </div>
+                        </div>
+                        <div class="flexcol shared-row">
+                            <label class="resource-label field-header">{{localize 'WOD5E.WTA.Auspice'}}</label>
+                            <div class="resource resource-content">
+                                {{#if auspice}}
+                                    <span class="data-item nowrap">
+                                        {{auspice.name}}
+                                    </span>
+                                    <a class="edit-data-item" data-action="itemEdit" data-item-id="{{auspice.id}}">
+                                        <i class="fa-solid fa-pen-nib"></i>
+                                    </a>
+                                {{else}}
+                                    <a class="add-data-item" data-action="createItem" data-type="auspice">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexcol field-section">
+                    <label class="resource-label field-header">{{localize "WOD5E.WTA.Rage"}}</label>
+                    <div class="flexrow">
+                        {{> "systems/vtm5e/display/wta/actors/parts/rage-value.hbs"}}
+                        {{> "systems/vtm5e/display/wta/actors/parts/rage-button.hbs"}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

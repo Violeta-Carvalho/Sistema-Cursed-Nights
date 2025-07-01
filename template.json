@@ -1,0 +1,963 @@
+{
+  "Actor": {
+    "types": ["mortal", "vampire", "ghoul", "hunter", "werewolf", "group", "spc"],
+    "templates": {
+      "base": {
+        "locked": false,
+        "hasSkillAttributeData": true,
+        "group": "",
+        "biography": "",
+        "appearance": "",
+        "equipment": "",
+        "notes": "",
+        "privatenotes": "",
+        "bio": {
+          "age": {
+            "trueage": ""
+          },
+          "dateof": {
+            "birth": ""
+          },
+          "history": ""
+        },
+        "headers": {
+          "concept":"",
+          "chronicle":"",
+          "ambition":"",
+          "desire":"",
+          "touchstones":"",
+          "tenets":""
+        },
+        "exp": {
+          "value": 0,
+          "max": 0
+        },
+        "derivedXP": {
+          "totalXP": 0,
+          "remainingXP": 0
+        },
+        "humanity": {
+          "value": 7,
+          "stains": 0
+        },
+        "despair": {
+          "value": 0
+        },
+        "desperation": {
+          "value": 0
+        },
+        "danger": {
+          "value": 0,
+          "max": 5
+        },
+        "health": {
+          "aggravated": 0,
+          "superficial": 0,
+          "max": 5,
+          "value": 5
+        },
+        "willpower": {
+          "aggravated": 0,
+          "superficial": 0,
+          "max": 5,
+          "value": 5
+        },
+        "attributes": {
+          "strength": {
+            "value": 1
+          },
+          "charisma": {
+            "value": 1
+          },
+          "intelligence": {
+            "value": 1
+          },
+          "dexterity": {
+            "value": 1
+          },
+          "manipulation": {
+            "value": 1
+          },
+          "wits": {
+            "value": 1
+          },
+          "stamina": {
+            "value": 1
+          },
+          "composure": {
+            "value": 1
+          },
+          "resolve": {
+            "value": 1
+          }
+        },
+        "sortedAttributes": {
+          "physical": [],
+          "social": [],
+          "mental": []
+        },
+        "skills": {
+          "athletics": {
+            "value": 0,
+            "bonuses": []
+          },
+          "animalken": {
+            "value": 0,
+            "bonuses": []
+          },
+          "academics": {
+            "value": 0,
+            "bonuses": []
+          },
+          "brawl": {
+            "value": 0,
+            "bonuses": []
+          },
+          "etiquette": {
+            "value": 0,
+            "bonuses": []
+          },
+          "awareness": {
+            "value": 0,
+            "bonuses": []
+          },
+          "craft": {
+            "value": 0,
+            "bonuses": []
+          },
+          "insight": {
+            "value": 0,
+            "bonuses": []
+          },
+          "finance": {
+            "value": 0,
+            "bonuses": []
+          },
+          "drive": {
+            "value": 0,
+            "bonuses": []
+          },
+          "intimidation": {
+            "value": 0,
+            "bonuses": []
+          },
+          "investigation": {
+            "value": 0,
+            "bonuses": []
+          },
+          "firearms": {
+            "value": 0,
+            "bonuses": []
+          },
+          "leadership": {
+            "value": 0,
+            "bonuses": []
+          },
+          "medicine": {
+            "value": 0,
+            "bonuses": []
+          },
+          "larceny": {
+            "value": 0,
+            "bonuses": []
+          },
+          "performance": {
+            "value": 0,
+            "bonuses": []
+          },
+          "occult": {
+            "value": 0,
+            "bonuses": []
+          },
+          "melee": {
+            "value": 0,
+            "bonuses": []
+          },
+          "persuasion": {
+            "value": 0,
+            "bonuses": []
+          },
+          "politics": {
+            "value": 0,
+            "bonuses": []
+          },
+          "stealth": {
+            "value": 0,
+            "bonuses": []
+          },
+          "streetwise": {
+            "value": 0,
+            "bonuses": []
+          },
+          "science": {
+            "value": 0,
+            "bonuses": []
+          },
+          "survival": {
+            "value": 0,
+            "bonuses": []
+          },
+          "subterfuge": {
+            "value": 0,
+            "bonuses": []
+          },
+          "technology": {
+            "value": 0,
+            "bonuses": []
+          }
+        },
+        "sortedSkills": {
+          "physical": [],
+          "social": [],
+          "mental": []
+        }
+      },
+      "abbreviated": {
+        "locked": false,
+        "biography": "",
+        "appearance": "",
+        "notes": "",
+        "privatenotes": "",
+        "generaldifficulty": {
+          "strongest": 0,
+          "normal": 0
+        },
+        "health": {
+          "aggravated": 0,
+          "superficial": 0,
+          "max": 5,
+          "value": 5
+        },
+        "willpower": {
+          "aggravated": 0,
+          "superficial": 0,
+          "max": 5,
+          "value": 5
+        },
+        "standarddicepools": {
+          "physical": {
+            "value": 1
+          },
+          "social": {
+            "value": 1
+          },
+          "mental": {
+            "value": 1
+          }
+        },
+        "exceptionaldicepools": {
+          "athletics": {
+            "value": 0,
+            "visible": false
+          },
+          "animalken": {
+            "value": 0,
+            "visible": false
+          },
+          "academics": {
+            "value": 0,
+            "visible": false
+          },
+          "brawl": {
+            "value": 0,
+            "visible": false
+          },
+          "etiquette": {
+            "value": 0,
+            "visible": false
+          },
+          "awareness": {
+            "value": 0,
+            "visible": false
+          },
+          "craft": {
+            "value": 0,
+            "visible": false
+          },
+          "insight": {
+            "value": 0,
+            "visible": false
+          },
+          "finance": {
+            "value": 0,
+            "visible": false
+          },
+          "drive": {
+            "value": 0,
+            "visible": false
+          },
+          "intimidation": {
+            "value": 0,
+            "visible": false
+          },
+          "investigation": {
+            "value": 0,
+            "visible": false
+          },
+          "firearms": {
+            "value": 0,
+            "visible": false
+          },
+          "leadership": {
+            "value": 0,
+            "visible": false
+          },
+          "medicine": {
+            "value": 0,
+            "visible": false
+          },
+          "larceny": {
+            "value": 0,
+            "visible": false
+          },
+          "performance": {
+            "value": 0,
+            "visible": false
+          },
+          "occult": {
+            "value": 0,
+            "visible": false
+          },
+          "melee": {
+            "value": 0,
+            "visible": false
+          },
+          "persuasion": {
+            "value": 0,
+            "visible": false
+          },
+          "politics": {
+            "value": 0,
+            "visible": false
+          },
+          "stealth": {
+            "value": 0,
+            "visible": false
+          },
+          "streetwise": {
+            "value": 0,
+            "visible": false
+          },
+          "science": {
+            "value": 0,
+            "visible": false
+          },
+          "survival": {
+            "value": 0,
+            "visible": false
+          },
+          "subterfuge": {
+            "value": 0,
+            "visible": false
+          },
+          "technology": {
+            "value": 0,
+            "visible": false
+          }
+        }
+      },
+      "disciplines": {
+        "disciplines": {
+          "animalism": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "auspex": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "celerity": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "dominate": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "fortitude": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "obfuscate": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "potence": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "presence": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "protean": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "sorcery": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "oblivion": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "alchemy": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "rituals": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "ceremonies": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          }
+        }
+      },
+      "edges": {
+        "edges": {
+          "arsenal": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "fleet": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "ordnance": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "library": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "improvisedgear": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "globalaccess": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "dronejockey": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "beastwhisperer": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "sensetheunnatural": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "repeltheunnatural": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "thwarttheunnatural": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          },
+          "artifact": {
+            "description": "",
+            "value": 0,
+            "perks": [],
+            "pools": [],
+            "visible": false
+          }
+        }
+      },
+      "werewolfForms": {
+        "activeForm": "homid",
+        "forms": {
+          "homid": {
+            "description": "",
+            "token": {
+              "img": ""
+            }
+          },
+          "glabro": {
+            "description": "",
+            "token": {
+              "img": ""
+            }
+          },
+          "crinos": {
+            "description": "",
+            "token": {
+              "img": ""
+            }
+          },
+          "hispo": {
+            "description": "",
+            "token": {
+              "img": ""
+            }
+          },
+          "lupus": {
+            "description": "",
+            "token": {
+              "img": ""
+            }
+          }
+        }
+      },
+      "gifts": {
+        "gifts": {
+          "native": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "ragabash": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "theurge": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "philodox": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "galliard": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "ahroun": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "blackfury": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "bonegnawer": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "childrenofgaia": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "galestalker": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "ghostcouncil": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "glasswalker": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "hartwarden": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "redtalon": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "shadowlord": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "silentstrider": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "silverfang": {
+            "description": "",
+            "value": 0,
+            "powers": []
+          },
+          "rites": {
+            "description": "",
+            "powers": []
+          }
+        }
+      },
+      "vampire_traits": {
+        "bio": {
+          "age": {
+            "apparent": ""
+          },
+          "dateof": {
+            "death": ""
+          }
+        },
+        "headers":{
+          "sire":"",
+          "generation":""
+        },
+        "blood": {
+          "potency": 0,
+          "resonance": ""
+        },
+        "hunger": {
+          "value": 1,
+          "max": 5
+        }
+      },
+      "ghoul_traits": {
+        "headers":{
+          "domitor":"",
+          "creedfields":""
+        }
+      },
+      "werewolf_traits": {
+        "balance": {
+          "hauglosk": {
+            "value": 0
+          },
+          "harano": {
+            "value": 0
+          }
+        },
+        "talismans": [],
+        "rage": {
+          "value": 1,
+          "max": 5
+        },
+        "frenzyActive": false,
+        "crinosHealth": {
+          "aggravated": 0,
+          "superficial": 0,
+          "max": 4
+        },
+        "lostTheWolf": false,
+        "renown": {
+          "glory": {
+            "value": 0
+          },
+          "honor": {
+            "value": 0
+          },
+          "wisdom": {
+            "value": 0
+          }
+        }
+      },
+      "hunter_traits": {
+        "headers":{
+          "cellname": ""
+        }
+      },
+      "cell_traits": {
+        "desperation": {
+          "value": 0
+        },
+        "danger": {
+          "value": 0,
+          "max": 5
+        }
+      },
+      "coterie_traits": {
+        "chasse": {
+          "value": 0
+        },
+        "lien": {
+          "value": 0
+        },
+        "portillon": {
+          "value": 0
+        }
+      },
+      "pack_traits": {
+        "territory": {
+          "value": 0
+        },
+        "community": {
+          "value": 0
+        },
+        "spirit": {
+          "value": 0
+        }
+      },
+      "settings": {
+        "settings": {
+          "headerbg": "",
+          "background": "",
+          "limited": {
+            "biography": true,
+            "appearance": true,
+            "touchstones": false,
+            "tenets": false
+          },
+          "skillAttributeInputs": false
+        }
+      }
+    },
+    "mortal": {
+      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "gamesystem": "mortal"
+    },
+    "vampire": {
+      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "gamesystem": "vampire"
+    },
+    "werewolf": {
+      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "gamesystem": "werewolf"
+    },
+    "hunter": {
+      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "gamesystem": "hunter"
+    },
+    "ghoul": {
+      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "gamesystem": "vampire"
+    },
+    "group": {
+      "templates": ["cell_traits", "coterie_traits", "pack_traits", "settings"],
+      "locked": false,
+      "groupType": "coterie",
+      "biography": "",
+      "equipment": "",
+      "notes": "",
+      "privatenotes": "",
+      "headers":{
+        "concept": ""
+      },
+      "members": [],
+      "collapsed": true
+    },
+    "spc": {
+      "templates": ["abbreviated", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "spcType": "mortal",
+      "gamesystem": "mortal",
+      "manifestation": "",
+      "power": {
+        "value": 1
+      },
+      "traits": "",
+      "settings": {
+        "enableGifts": false,
+        "enableDisciplines": false,
+        "enableEdges": false,
+        "generalDifficultyEnabled": true
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "feature", "customRoll", "armor", "weapon", "gear", "trait", "condition",
+      "power", "boon", "clan", "predatorType", "resonance",
+      "perk", "edgepool", "creed", "drive",
+      "gift", "tribe", "auspice", "talisman"
+    ],
+    "templates": {
+      "base": {
+        "description": "",
+        "bonuses": []
+      },
+      "equipment": {
+        "quantity": 1
+      },
+      "itemUses": {
+        "uses": {
+          "max": 0,
+          "current": 0,
+          "enabled": false
+        }
+      }
+    },
+    "feature": {
+      "templates": ["base", "itemUses"],
+      "featuretype": "merit",
+      "points": 0
+    },
+    "boon": {
+      "templates": ["base"],
+      "boontype": "Trivial",
+      "gamesystem": "vampire"
+    },
+    "customRoll": {
+      "templates": ["base"],
+      "dicepool": {},
+      "modifier": 0
+    },
+    "armor": {
+      "templates": ["base", "equipment"],
+      "armorvalue": 0
+    },
+    "weapon": {
+      "templates": ["base", "equipment", "itemUses"],
+      "weaponvalue": 0
+    },
+    "gear": {
+      "templates": ["base", "equipment", "itemUses"]
+    },
+    "trait": {
+      "templates": ["base"],
+      "dice": 0
+    },
+    "condition": {
+      "templates": ["base"],
+      "effects": {},
+      "suppressed": false
+    },
+    "clan": {
+      "templates": ["base"],
+      "gamesystem": "vampire",
+      "bane": ""
+    },
+    "predatorType": {
+      "templates": ["base"],
+      "gamesystem": "vampire"
+    },
+    "resonance": {
+      "templates": ["base"],
+      "gamesystem": "vampire",
+      "dyscrasia": ""
+    },
+    "power": {
+      "templates": ["base"],
+      "discipline": "animalism",
+      "duration": "",
+      "level": 1,
+      "dicepool": {},
+      "cost": "",
+      "gamesystem": "vampire"
+    },
+    "creed": {
+      "templates": ["base"],
+      "gamesystem": "hunter",
+      "edges": "",
+      "drives": "",
+      "desperationFields": ""
+    },
+    "drive": {
+      "templates": ["base"],
+      "gamesystem": "hunter",
+      "redemption": ""
+    },
+    "perk": {
+      "templates": ["base"],
+      "edge": "arsenal",
+      "duration": "",
+      "dicepool": {},
+      "cost": "",
+      "gamesystem": "hunter"
+    },
+    "edgepool": {
+      "templates": ["base"],
+      "edge": "arsenal",
+      "dicepool": {},
+      "gamesystem": "hunter"
+    },
+    "tribe": {
+      "templates": ["base"],
+      "gamesystem": "werewolf",
+      "patronSpirit": {
+        "name": "",
+        "description": "",
+        "favor": "",
+        "ban": ""
+      }
+    },
+    "auspice": {
+      "templates": ["base"],
+      "gamesystem": "werewolf"
+    },
+    "talisman": {
+      "templates": ["base", "equipment"],
+      "gamesystem": "werewolf"
+    },
+    "gift": {
+      "templates": ["base"],
+      "giftType": "native",
+      "renown": "honor",
+      "level": 1,
+      "cost": 0,
+      "willpowercost": 0,
+      "action": "",
+      "dicepool": {},
+      "duration": "",
+      "gamesystem": "werewolf"
+    }
+  }
+}
