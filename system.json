@@ -249,8 +249,8 @@
   "url": "https://github.com/Violeta-Carvalho/Sistema-Cursed-Nights",
   "bugs": "https://github.com/Violeta-Carvalho/Sistema-Cursed-Nights/issues",
   "background": "systems/vtm5e/assets/images/wodcity.jpg",
-  "manifest": "https://github.com/Violeta-Carvalho/Sistema-Cursed-Nights/releases/download/5.0.11/system.json",
-  "download": "https://github.com/Violeta-Carvalho/Sistema-Cursed-Nights/releases/download/5.0.11/vtm5e.zip",
+  "manifest": "https://raw.githubusercontent.com/Violeta-Carvalho/Sistema-Cursed-Nights/master/system.json",
+  "download": "https://github.com/Violeta-Carvalho/Sistema-Cursed-Nights/archive/refs/heads/master.zip",
   "flags": {
     "hotReload": {
       "extensions": ["css", "hbs", "json"],
