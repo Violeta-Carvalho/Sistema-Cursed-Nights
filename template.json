@@ -1,6 +1,14 @@
 {
   "Actor": {
-    "types": ["mortal", "vampire", "ghoul", "hunter", "werewolf", "group", "spc"],
+    "types": [
+      "mortal",
+      "vampire",
+      "ghoul",
+      "hunter",
+      "werewolf",
+      "group",
+      "spc"
+    ],
     "templates": {
       "base": {
         "locked": false,
@@ -21,12 +29,12 @@
           "history": ""
         },
         "headers": {
-          "concept":"",
-          "chronicle":"",
-          "ambition":"",
-          "desire":"",
-          "touchstones":"",
-          "tenets":""
+          "concept": "",
+          "chronicle": "",
+          "ambition": "",
+          "desire": "",
+          "touchstones": "",
+          "tenets": ""
         },
         "exp": {
           "value": 0,
@@ -36,8 +44,8 @@
           "totalXP": 0,
           "remainingXP": 0
         },
-        "humanity": {
-          "value": 7,
+        "beast": {
+          "value": 2,
           "stains": 0
         },
         "despair": {
@@ -101,15 +109,11 @@
             "value": 0,
             "bonuses": []
           },
-          "animalken": {
+          "biologicalsc": {
             "value": 0,
             "bonuses": []
           },
-          "academics": {
-            "value": 0,
-            "bonuses": []
-          },
-          "brawl": {
+          "humanitysc": {
             "value": 0,
             "bonuses": []
           },
@@ -129,10 +133,6 @@
             "value": 0,
             "bonuses": []
           },
-          "finance": {
-            "value": 0,
-            "bonuses": []
-          },
           "drive": {
             "value": 0,
             "bonuses": []
@@ -141,11 +141,7 @@
             "value": 0,
             "bonuses": []
           },
-          "investigation": {
-            "value": 0,
-            "bonuses": []
-          },
-          "firearms": {
+          "ranged": {
             "value": 0,
             "bonuses": []
           },
@@ -153,19 +149,15 @@
             "value": 0,
             "bonuses": []
           },
-          "medicine": {
-            "value": 0,
-            "bonuses": []
-          },
           "larceny": {
             "value": 0,
             "bonuses": []
           },
-          "performance": {
+          "expression": {
             "value": 0,
             "bonuses": []
           },
-          "occult": {
+          "occultsc": {
             "value": 0,
             "bonuses": []
           },
@@ -177,19 +169,15 @@
             "value": 0,
             "bonuses": []
           },
-          "politics": {
-            "value": 0,
-            "bonuses": []
-          },
           "stealth": {
             "value": 0,
             "bonuses": []
           },
-          "streetwise": {
+          "hearthwisdom": {
             "value": 0,
             "bonuses": []
           },
-          "science": {
+          "exactsc": {
             "value": 0,
             "bonuses": []
           },
@@ -198,10 +186,6 @@
             "bonuses": []
           },
           "subterfuge": {
-            "value": 0,
-            "bonuses": []
-          },
-          "technology": {
             "value": 0,
             "bonuses": []
           }
@@ -250,15 +234,11 @@
             "value": 0,
             "visible": false
           },
-          "animalken": {
+          "biologicalsc": {
             "value": 0,
             "visible": false
           },
-          "academics": {
-            "value": 0,
-            "visible": false
-          },
-          "brawl": {
+          "humanitysc": {
             "value": 0,
             "visible": false
           },
@@ -278,10 +258,6 @@
             "value": 0,
             "visible": false
           },
-          "finance": {
-            "value": 0,
-            "visible": false
-          },
           "drive": {
             "value": 0,
             "visible": false
@@ -290,11 +266,7 @@
             "value": 0,
             "visible": false
           },
-          "investigation": {
-            "value": 0,
-            "visible": false
-          },
-          "firearms": {
+          "ranged": {
             "value": 0,
             "visible": false
           },
@@ -302,19 +274,15 @@
             "value": 0,
             "visible": false
           },
-          "medicine": {
-            "value": 0,
-            "visible": false
-          },
           "larceny": {
             "value": 0,
             "visible": false
           },
-          "performance": {
+          "expression": {
             "value": 0,
             "visible": false
           },
-          "occult": {
+          "occultsc": {
             "value": 0,
             "visible": false
           },
@@ -326,19 +294,15 @@
             "value": 0,
             "visible": false
           },
-          "politics": {
-            "value": 0,
-            "visible": false
-          },
           "stealth": {
             "value": 0,
             "visible": false
           },
-          "streetwise": {
+          "hearthwisdom": {
             "value": 0,
             "visible": false
           },
-          "science": {
+          "exactsc": {
             "value": 0,
             "visible": false
           },
@@ -347,10 +311,6 @@
             "visible": false
           },
           "subterfuge": {
-            "value": 0,
-            "visible": false
-          },
-          "technology": {
             "value": 0,
             "visible": false
           }
@@ -370,7 +330,31 @@
             "powers": [],
             "visible": false
           },
-          "celerity": {
+          "daimonion": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "dementation": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "assamitesorcery": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "koldunicsorcery": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "setitesorcery": {
             "description": "",
             "value": 0,
             "powers": [],
@@ -388,7 +372,43 @@
             "powers": [],
             "visible": false
           },
+          "melpominee": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "mytherceria": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "protean": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "necromancy": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "obeah": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
           "obfuscate": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "ogham": {
             "description": "",
             "value": 0,
             "powers": [],
@@ -406,37 +426,97 @@
             "powers": [],
             "visible": false
           },
-          "protean": {
+          "primal": {
             "description": "",
             "value": 0,
             "powers": [],
             "visible": false
           },
-          "sorcery": {
+          "celerity": {
             "description": "",
             "value": 0,
             "powers": [],
             "visible": false
           },
-          "oblivion": {
+          "quietus": {
             "description": "",
             "value": 0,
             "powers": [],
             "visible": false
           },
-          "alchemy": {
+          "chimerism": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "thaumaturgy": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "sanguinus": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "serpentis": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "spiritus": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "obtenebration": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "thanatosis": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "temporis": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "valeren": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "vicissitude": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "visceratika": {
+            "description": "",
+            "value": 0,
+            "powers": [],
+            "visible": false
+          },
+          "flight": {
             "description": "",
             "value": 0,
             "powers": [],
             "visible": false
           },
           "rituals": {
-            "description": "",
-            "value": 0,
-            "powers": [],
-            "visible": false
-          },
-          "ceremonies": {
             "description": "",
             "value": 0,
             "powers": [],
@@ -669,23 +749,22 @@
             "death": ""
           }
         },
-        "headers":{
-          "sire":"",
-          "generation":""
+        "headers": {
+          "sire": "",
+          "generation": ""
         },
         "blood": {
-          "potency": 0,
-          "resonance": ""
+          "potency": 0
         },
-        "hunger": {
+        "beast": {
           "value": 1,
-          "max": 5
+          "max": 7
         }
       },
       "ghoul_traits": {
-        "headers":{
-          "domitor":"",
-          "creedfields":""
+        "headers": {
+          "domitor": "",
+          "creedfields": ""
         }
       },
       "werewolf_traits": {
@@ -722,7 +801,7 @@
         }
       },
       "hunter_traits": {
-        "headers":{
+        "headers": {
           "cellname": ""
         }
       },
@@ -772,23 +851,78 @@
       }
     },
     "mortal": {
-      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "base",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "gamesystem": "mortal"
     },
     "vampire": {
-      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "base",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "gamesystem": "vampire"
     },
     "werewolf": {
-      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "base",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "gamesystem": "werewolf"
     },
     "hunter": {
-      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "base",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "gamesystem": "hunter"
     },
     "ghoul": {
-      "templates": ["base", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "base",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "gamesystem": "vampire"
     },
     "group": {
@@ -799,14 +933,25 @@
       "equipment": "",
       "notes": "",
       "privatenotes": "",
-      "headers":{
+      "headers": {
         "concept": ""
       },
       "members": [],
       "collapsed": true
     },
     "spc": {
-      "templates": ["abbreviated", "vampire_traits", "ghoul_traits", "disciplines", "werewolf_traits", "werewolfForms", "gifts", "hunter_traits", "edges", "settings"],
+      "templates": [
+        "abbreviated",
+        "vampire_traits",
+        "ghoul_traits",
+        "disciplines",
+        "werewolf_traits",
+        "werewolfForms",
+        "gifts",
+        "hunter_traits",
+        "edges",
+        "settings"
+      ],
       "spcType": "mortal",
       "gamesystem": "mortal",
       "manifestation": "",
@@ -824,10 +969,26 @@
   },
   "Item": {
     "types": [
-      "feature", "customRoll", "armor", "weapon", "gear", "trait", "condition",
-      "power", "boon", "clan", "predatorType", "resonance",
-      "perk", "edgepool", "creed", "drive",
-      "gift", "tribe", "auspice", "talisman"
+      "feature",
+      "customRoll",
+      "armor",
+      "weapon",
+      "gear",
+      "trait",
+      "condition",
+      "power",
+      "boon",
+      "clan",
+      "predatorType",
+      "resonance",
+      "perk",
+      "edgepool",
+      "creed",
+      "drive",
+      "gift",
+      "tribe",
+      "auspice",
+      "talisman"
     ],
     "templates": {
       "base": {
